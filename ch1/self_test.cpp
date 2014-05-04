@@ -3,7 +3,7 @@
  * Purpose: Learning
  * Book: Absolute C++
  * Github: https://github.com/krishamoud
- * Git Repo: TBA
+ * Git Repo: https://github.com/krishamoud/absolute-cpp.git 
  * Chapter: 1
  * Questions: Self Test
 
