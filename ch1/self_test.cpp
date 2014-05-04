@@ -6,10 +6,9 @@
  * Git Repo: https://github.com/krishamoud/absolute-cpp.git 
  * Chapter: 1
  * Questions: Self Test
-
 */
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main(){
@@ -80,6 +79,31 @@ int main(){
 	//f = (9.0/5.0) * c + 32.0;
 	//cout << f << endl; //f is assigned 68.  Correct.
 	/* -- Question 8 End -- */
+	
+	/* -- Question 9 Begin -- */
+	//cout << "The answer to the question of\n"
+	//		 << "Life, the Universe, and Everything is 42.\n";
+	/* -- Question 9 End -- */
 
+	/* -- Question 10 Begin -- */
+	//int theNumber;
+	//cout << "Please enter a number: ";
+	//cin >> theNumber;
+	//cout << "Your number is " << theNumber << endl;
+	/* -- Question 10 End -- */
+
+	/* -- Question 11 Begin -- */
+	//cout.setf(ios::fixed);
+	//cout.setf(ios::showpoint);
+	//cout.precision(3);
+	/* -- Question 11 End -- */
+
+	/* -- Question 12 Begin -- */
+	//cout << "Hello, World!" << endl;
+	/* -- Question 12 End -- */
+
+	/* -- Question 13 Begin -- */
+	//cout << 'A' << '\n' << 'B' << '\t' << 'C' << endl;
+	/* -- Question 13 End -- */
 	return 0;
 }
