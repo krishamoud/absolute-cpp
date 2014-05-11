@@ -21,6 +21,7 @@ void iterativeStars(int n);
 void iterativeReverse(int n);
 void iterativeList(int n);
 void iterativeReverseList(int n);
+int squareSum(int n);
 
 int main(){
 	/* -- Question 1 Begin -- */
@@ -68,7 +69,19 @@ int main(){
 	iterativeReverseList(6);
 	/* -- Question 11 End -- */
 
+	/* -- Question 15 Begin -- */
+	cout << squareSum(3) << endl;
+	/* -- Question 15 End -- */
+
 	return 0;
+}
+
+int squareSum(int n){
+	if(n <= 1){
+		return (1);
+	} else {
+		return squareSum(n - 1) + n * n;
+	}
 }
 
 void iterativeReverseList(int n){
