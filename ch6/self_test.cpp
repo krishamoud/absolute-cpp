@@ -19,6 +19,8 @@ struct ShoeType
 
 void readShoeRecord(ShoeType& newShoe);
 void writeShoeRecord(ShoeType& newShoe);
+ShoeType discount(ShoeType& oldRecord);
+
 int main(){
 	/* -- Question 1 Begin -- */
 	//a)double
@@ -66,7 +68,17 @@ int main(){
 	readShoeRecord(shoe);
 	writeShoeRecord(shoe);
 	/* -- Question 7 End -- */
+
+	/* -- Question 8 Begin -- */
+	discount(shoe);
+	writeShoeRecord(shoe);
+	/* -- Question 8 End -- */
 	return 0;
+}
+
+ShoeType discount(ShoeType& oldRecord){
+	oldRecord.price = oldRecord.price * 0.9;
+	return oldRecord;
 }
 
 void readShoeRecord(ShoeType& newShoe){
