@@ -11,12 +11,27 @@
 #include<iostream>
 using namespace std;
 
-struct ShoeType
-{
+struct ShoeType{
 	char style;
 	double price;
 };
 
+class Temperature{
+	public:
+ 		void set(double newDegrees, char newScale);
+		//Sets the member variables to the values given as 
+		//arguments.
+		void get();
+		double degrees;
+		char scale; //’F’ for Fahrenheit or ’C’ for Celsius. 
+};
+class DayOfYear{
+		public:
+			void input( );
+			void output( );
+			int month;
+			int day;
+};
 void readShoeRecord(ShoeType& newShoe);
 void writeShoeRecord(ShoeType& newShoe);
 ShoeType discount(ShoeType& oldRecord);
@@ -73,7 +88,43 @@ int main(){
 	discount(shoe);
 	writeShoeRecord(shoe);
 	/* -- Question 8 End -- */
+
+	/* -- Question 9 Begin -- */
+	
+	DayOfYear today, birthday;
+	today.input();
+	today.output();
+	/* -- Question 9 End -- */
+
+	/* -- Question 10 Begin -- */
+	Temperature cali;
+	cali.set(65, 'F');
+	cali.get();
+	/* -- Question 10 End -- */
+
+	/* -- Question 11 Begin -- */
+	//::is for member functions
+	//. is for accessing members
+	/* -- Question 11 End -- */
+
 	return 0;
+}
+void Temperature::set(double newDegrees, char newScale){
+	degrees = newDegrees;
+	scale = newScale;
+}
+void Temperature::get(){
+	cout << "It is " << degrees << " degrees " << scale << ".\n";
+}
+void DayOfYear::input(){
+	cout << "Enter the month as an integer: ";
+	cin >> month;
+	cout << "Enter the day as an integer: ";
+	cin >> day;
+}
+
+void DayOfYear::output(){
+	cout << "The date is " << month << "/" << day << "/14\n";
 }
 
 ShoeType discount(ShoeType& oldRecord){
