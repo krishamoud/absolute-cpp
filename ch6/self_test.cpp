@@ -107,6 +107,39 @@ int main(){
 	//. is for accessing members
 	/* -- Question 11 End -- */
 
+	/* -- Question 12 Begin -- */
+	//a)invalid
+	//b)valid
+	//c)valid
+	//d)valid
+	//e)valid
+	/* -- Question 12 End -- */
+
+	/* -- Question 13 Begin -- */
+	//it would make them all valid
+	/* -- Question 13 End -- */
+
+	/* -- Question 14 Begin -- */
+	//a) public: makes the members available for mutation
+	//b) private: requires setters and getters to manage 
+	/* -- Question 14 End -- */
+
+	/* -- Question 15 Begin -- */
+	//a) an adequate amount...
+	//b) an adequate number...
+	/* -- Question 15 End -- */
+
+	/* -- Question 16 Begin -- */
+	//member variables should be private
+	//member function should be public
+	/* -- Question 16 End -- */
+
+	/* -- Question 17 Begin -- */
+	//a)the interface is the comments that tell what information is being used
+	//	and the public memeber functions
+	//b)the implementation is everything that makes the class work
+	/* -- Question 17 End -- */
+
 	return 0;
 }
 void Temperature::set(double newDegrees, char newScale){
